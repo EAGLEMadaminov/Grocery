@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f0f7fc;
+}
+.section-center {
+  background-color: white;
+  width: 60vw;
+  margin: 40px auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  text-align: center;
+}
+.grocery-form {
+  padding: 30px;
+}
+.grocery-form h3 {
+  text-transform: capitalize;
+  margin: 20px 0px;
+}
+.grocery-form input {
+  border: none;
+  background-color: #f0f7fc;
+  padding: 5px 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 40%;
+  outline: none;
+}
+.grocery-form p {
+  margin: 0px auto;
+}
+.form-control {
+  display: flex;
+  justify-content: center;
+}
+.submit-btn {
+  background-color: #a4d5f6;
+  border: none;
+  padding: 5px 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-transform: capitalize;
+}
+.submit-btn:hover {
+  background-color: #4ba9dc;
+  color: white;
+}
+.grocery-container {
+  visibility: hidden;
+  width: 60vw;
+  text-align: center;
+  margin: 0px auto;
+}
+.show-container {
+  visibility: visible;
+}
+.grocery-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 25px;
+}
+.btn-container {
+  display: flex;
+}
+.btn {
+  border: none;
+  background-color: transparent;
+}
+.edit-btn {
+  color: #a4f19f;
+  margin-right: 10px;
+}
+.delete-btn {
+  color: #ce3d5e;
+}
+.clear-btn {
+  text-transform: capitalize;
+  color: #ce3d5e;
+  letter-spacing: 3px;
+}
+.alert {
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  width: 30vw;
+}
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+}
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+}
+.title {
+  text-transform: capitalize;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  margin: 10px 0px;
+}
+@media (max-width: 756px) {
+  .section-center,
+  .grocery-container {
+    width: 90vw;
+  }
+  .alert {
+    width: 65vw;
+  }
+}
