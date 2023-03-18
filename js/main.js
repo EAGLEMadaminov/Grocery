@@ -89,6 +89,8 @@ function editItem(e) {
   editFlag = true;
   editID = element.dataset.id;
   submitBtn.textContent = "edit";
+  removeFromLocalStorage(editID);
+  addToLocalStorege(editID, value);
 }
 // set back to default
 function setBackToDefault() {
